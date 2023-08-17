@@ -1,0 +1,39 @@
+{
+  "name": "social-media-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "app": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "helmet": "^7.0.0",
+    "i18n": "^0.15.1",
+    "il8next": "^23.4.4",
+    "il8next-express-middleware": "^2.0.0",
+    "il8next-node-fs-backend": "^2.1.3",
+    "joi": "^17.9.2",
+    "joi-objectid": "^4.0.2",
+    "jsonwebtoken": "^9.0.1",
+    "localize": "^0.4.7",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.3",
+    "morgan": "^1.10.0",
+    "nodemon": "^3.0.1",
+    "winston": "^3.10.0",
+    "winston-mongodb": "^5.1.1",
+    "yarn": "^1.22.19"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "nodemon": "^3.0.1"
+  }
+}

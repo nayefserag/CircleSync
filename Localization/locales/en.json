@@ -1,0 +1,38 @@
+{
+    "hello": "Hello",
+    "welcome": "Welcome to our app!",
+    "Invalid-password": "Invalid password",
+    "User-registered-successfully": "User registered successfully",
+    "User-not-found" : "User not found",
+    "User-already-exist" : "User already exist",
+    "Email-already-exist" : "Email already exist",
+    "User-updated-successfully" : "User updated successfully",
+    "User-deleted-successfully" : "User deleted successfully",
+    "User-not-deleted" : "User not deleted",
+    "Admin-delete":"Admin has been deleted This User successfully",
+    "Unauthorized":" unauthorized user",
+    "User-followed":"User has been followed",
+    "User-unfollowed":"User has been unfollowed",
+    "Already-followed":"You are already following this user",
+    "Already-unfollowed":"You are already unfollow this user",
+    "Follow-yourself":"You cannot follow yourself",
+    "UnFollow-yourself":"You cannot follow yourself",
+    "Post-created-successfully":"Post created successfully",
+    "Post-updated-successfully":"Post updated successfully",
+    "Post-deleted-successfully":"Post deleted successfully",
+    "Post-not-deleted":"Post not deleted",
+    "Post-not-found":"Post not found",
+    "Admin-delete-post":"Admin deleted post successfully",
+    "User-dont-have-posts":"User don't have any post",
+    "User-have-posts":"User have posts",
+    "Post-liked":"Post has been liked",
+    "Post-unliked":"Post has been unliked",
+    "Post-is-invalid":"Post is invalid",
+    "Invalid-token":"Invalid token",
+    "No-token":"No token provided",
+    "An-error-occurred":"An error occurred",
+    "Email-or-password-is-invalid":"Email or password is invalid"
+   
+    
+  }
+  
