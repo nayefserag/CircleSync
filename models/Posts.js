@@ -15,6 +15,14 @@ Image : {
 likes : {
     type : Array,
     default : []
+},
+comments : {
+    type : Array,
+    default : []
+},
+hashtags: {
+    type : Array,
+    default : []
 }
 
 })

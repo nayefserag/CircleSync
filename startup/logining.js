@@ -3,7 +3,7 @@ const winston =require('winston')
 require('express-async-errors');
 require('winston-mongodb');
 module.exports = function() { 
-    winston.handleExceptions(
+    winston.exceptions.handle(
         new winston.transports.File({ filename: 'unhandled.log' }),
         new winston.transports.Console({ format: winston.format.combine(winston.format.colorize(), winston.format.simple()) }),
         

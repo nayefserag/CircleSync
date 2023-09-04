@@ -55,7 +55,8 @@ next();
           description: Joi.string(),
           city: Joi.string().max(50),
           from: Joi.string().max(50),
-          relationship: Joi.number().valid(1, 2, 3)
+          relationship: Joi.number().valid(1, 2, 3),
+          fcmToken: Joi.string(),
       });
   
       return schema.validate(user);

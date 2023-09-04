@@ -1,0 +1,9 @@
+{
+  "extends": "../tsconfig.settings.json",
+  "compilerOptions": {
+    "outDir": "./wrapper_dist",
+    "rootDir": "./src"
+  },
+  "include": ["./src/**/*"],
+  "types": ["node", "jest"]
+}

@@ -15,6 +15,9 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "express-async-errors": "^3.1.1",
+    "fcm-node": "^1.6.1",
+    "firebase-admin": "^11.10.1",
+    "firebase-functions": "^4.4.1",
     "helmet": "^7.0.0",
     "i18n": "^0.15.1",
     "il8next": "^23.4.4",
@@ -28,6 +31,7 @@
     "mongoose": "^7.4.3",
     "morgan": "^1.10.0",
     "nodemon": "^3.0.1",
+    "socket.io": "^4.7.2",
     "winston": "^3.10.0",
     "winston-mongodb": "^5.1.1",
     "yarn": "^1.22.19"

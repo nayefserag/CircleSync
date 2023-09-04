@@ -2,6 +2,8 @@ const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
     name: {
         type: String,
+        required: true,
+        unique: true,
 
     },
     email: {
@@ -49,6 +51,9 @@ const UserSchema = new mongoose.Schema({
         type: Number,
         enum: [1, 2, 3]
     },
+    fcmToken: {
+        type: String,
+    }
 
 
 

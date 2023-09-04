@@ -1,6 +1,6 @@
 {
   "hello": "Hola",
-  "welcome": "Bienvenido a nuestra aplicación!",
+  "welcome": "¡Bienvenido a nuestra aplicación!",
   "Invalid-password": "Contraseña inválida",
   "User-registered-successfully": "Usuario registrado exitosamente",
   "User-not-found": "Usuario no encontrado",
@@ -31,5 +31,10 @@
   "Invalid-token": "Token no válido",
   "No-token": "No se proporcionó ningún token",
   "An-error-occurred": "Ocurrió un error",
-  "Email-or-password-is-invalid": "El correo electrónico o la contraseña no son válidos"
+  "Email-or-password-is-invalid": "El correo electrónico o la contraseña no son válidos",
+  "Comment-added": "Comentario agregado",
+  "Comment-updated": "Comentario actualizado",
+  "Comment-deleted": "Comentario eliminado",
+  "Comment-not-deleted": "Comentario no eliminado",
+  "Comment-not-found": "Comentario no encontrado"
 }

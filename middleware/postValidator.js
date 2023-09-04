@@ -2,9 +2,9 @@ const Joi = require('joi');
 const Post = require('../models/Posts.js');
 const il8n = require('../Localization/il8n.js');
 //validation for post
-exports.validatePosts = (req, res, next) => {
+exports.validatePosts = (req, res, next) => {+
+    console.log(req.body);
     il8n.setLocale(req.headers['accept-language'] || 'en');
-    
     const { error } = validatePost(req.body);
     if (error) {
      console.error(error.details[0].message);
@@ -33,7 +33,6 @@ function validatePost(post) {
         userId: Joi.string().required(),
         post: Joi.string().min(1).max(750).required(),
         Image: Joi.string(),
-        likes: Joi.array()
     });
 
     return schema.validate(post);

@@ -24,3 +24,8 @@ exports.generateToken = (id, isAdmin) => {
 //     }
 //     return isMatch;
 // }
+
+exports.extractHashtags = (text) => {
+    const hashtagRegex = /#(\w+)/g;
+    return [...text.matchAll(hashtagRegex)].map((match) => match[1]);
+  };

@@ -2,6 +2,7 @@ const jwt = require('jsonwebtoken');
 const il8n = require('../Localization/il8n.js');
 
 exports.verifyToken = (req, res, next) => {
+ 
     il8n.setLocale(req.headers['accept-language'] || 'en');
     const token = req.headers[process.env.TOKEN_NAME];
 

@@ -1,0 +1,50 @@
+{
+  "name": "fcm-node",
+  "version": "1.6.1",
+  "description": "A Node.JS simple interface to Google's Firebase Cloud Messaging (FCM). Supports both android and iOS, including topic messages, and parallel calls.\nAditionally it also keeps the callback behavior for the new firebase messaging service.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jlcvp/fcm-node.git"
+  },
+  "keywords": [
+    "fcm",
+    "gcm",
+    "push",
+    "notification",
+    "push notification",
+    "firebase",
+    "firebase cloud messaging",
+    "google",
+    "android",
+    "ios",
+    "topic message",
+    "parallel send"
+  ],
+  "author": "Leonardo Pereira <jlcvp@cin.ufpe.br>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jlcvp/fcm-node/issues"
+  },
+  "homepage": "https://github.com/jlcvp/fcm-node",
+  "dependencies": {
+    "firebase-admin": "^9.6.0",
+    "https-proxy-agent": "^5.0.0",
+    "retry": "^0.12.0",
+    "snyk": "^1.518.0"
+  },
+  "devDependencies": {
+    "mocha": "^8.3.2"
+  },
+  "scripts": {
+    "test": "mocha --exit",
+    "debugtest": "mocha --debug-brk $npm_package_options_mocha --exit",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "tonicExampleFilename": "example.js",
+  "snyk": true
+}
