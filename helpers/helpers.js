@@ -15,6 +15,15 @@ exports.generateToken = (id, isAdmin) => {
     });
     return token;
 }
+exports.refreshToken = (id, isAdmin) => {
+    const token = jwt.sign({
+        id: id,
+        isAdmin: isAdmin
+    }, process.env.JWT_SECRET, {
+        expiresIn: '7d'
+    });
+    return token;
+}
 
 // exports.comparePasswords=async (req,res ,password,hasedpassword) =>{
 //     const isMatch =await bcrypt.compare(password, hasedpassword);

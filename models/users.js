@@ -1,3 +1,4 @@
+const { array } = require('joi');
 const mongoose = require('mongoose');
 const UserSchema = new mongoose.Schema({
     name: {
@@ -53,6 +54,14 @@ const UserSchema = new mongoose.Schema({
     },
     fcmToken: {
         type: String,
+    },
+    googleId: {
+        type: String,
+        default: ""
+    },
+    refreshToken: {
+        type: [String],
+        default: ""
     }
 
 

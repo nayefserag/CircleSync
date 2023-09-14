@@ -4,16 +4,19 @@ const bcrypt = require('bcrypt');
 const helpers = require('../helpers/helpers.js');
 const il8n = require('../Localization/il8n.js');
 
-
 async function registerUser(req, res, next) {
     il8n.setLocale(req.headers['accept-language'] || 'en');
     const password = await helpers.hashPassword(req.body.password);
     req.body.password = password;
-    await new User(req.body).save();
+    const user = new User(req.body)
     const token = helpers.generateToken(User._id, User.isAdmin);
+    const refreshToken = helpers.refreshToken(User._id, User.isAdmin);
+    user.refreshToken = refreshToken;
+    await user.save();
     res.header(process.env.TOKEN_NAME, token).status(201).json({
         message: il8n.__('User-registered-successfully'),
-        token
+        token,
+        refreshToken
     });
 }
 
@@ -33,13 +36,25 @@ async function loginUser(req, res, next) {
         await user.save();
       }
     const token = helpers.generateToken(user._id, user.isAdmin);
+    const refreshToken = helpers.refreshToken(user._id, user.isAdmin);
+    user.refreshToken = refreshToken;
+    await user.save();
     res.header(process.env.TOKEN_NAME, token).status(200).json({
         message: il8n.__('welcome'),
-        token
+        token,
+        refreshToken
     });
 }
 
+
+
 module.exports = {
     registerUser: asyncMiddleware(registerUser),
-    loginUser: asyncMiddleware(loginUser)
+    loginUser: asyncMiddleware(loginUser),
+
 };
+
+
+
+
+

@@ -12,16 +12,32 @@ exports.verifyToken = (req, res, next) => {
         });
     }
 
+
     try {
-        const decoded = jwt.verify(token, process.env.JWT_SECRET);
+        console.log(token);
+        const decoded = jwt.verify(token, process.env.JWT_SECRE,function(err, decoded) {
+            if (err) {
+                if(err.name == "TokenExpiredError"){
+                    var refreshedToken = jwt.sign({
+                        success: true,
+                        }, process.env.JWT_SECRE, {
+                            expiresIn: '5m'
+                        });
+                }
+            }
+
+        });
         req.user = decoded;
+       
         next();
     } catch (err) {
+        
         return res.status(403).json({
             message:  il8n.__('Invalid-token')
         });
     }
 };
+
 
 
 
