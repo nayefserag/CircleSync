@@ -46,11 +46,27 @@ async function loginUser(req, res, next) {
     });
 }
 
+//logout 
+async function logoutUser(req, res, next) {
+    // Clear the user's session data
+    req.session.destroy((err) => {
+      if (err) {
+        console.error('Error destroying session:', err);
+      } else {
+        // Redirect to the home page or any other appropriate page after logging out
+        res.redirect('login');
+      }
+    });
+  }
+
+
+//refresh token 
 
 
 module.exports = {
     registerUser: asyncMiddleware(registerUser),
     loginUser: asyncMiddleware(loginUser),
+    logoutUser: asyncMiddleware(logoutUser)
 
 };
 

@@ -27,6 +27,7 @@ The project utilized the following technologies and tools:
 The project utilized the following technologies and tools:
 - Node.js
 - Express.js
+- Jest
 - MongoDB
 - Firebase Cloud Messaging
 - Git

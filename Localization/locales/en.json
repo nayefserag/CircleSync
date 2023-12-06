@@ -34,10 +34,8 @@
 	"Email-or-password-is-invalid": "Email or password is invalid",
 	"Comment-added": "Comment added",
 	"Comment-updated": "Comment updated",
-    "Comment-deleted": "Comment deleted",
-    "Comment-not-deleted": "Comment not deleted",
-    "Comment-not-found": "Comment not found"
-   
-
-  }
-  
+	"Comment-deleted": "Comment deleted",
+	"Comment-not-deleted": "Comment not deleted",
+	"Comment-not-found": "Comment not found",
+	"Refresh-token-not-provided": "Refresh-token-not-provided"
+}

@@ -7,10 +7,12 @@ const express = require('express');
 const il8n = require('../Localization/il8n.js');
 const passport = require('../middleware/passport');
 const sessionConfig  = require('../middleware/session');
-//
-
+const swaggerJsdoc = require('swagger-jsdoc');
+const swaggerUi = require('swagger-ui-express');
+const swagger = require('../config/swaggerOptions.js');
 
 module.exports = function (app) {
+    app.use('/api-docs', swagger.serve, swagger.setup);
     app.use(bodyParser.json());
     app.use(sessionConfig);
     app.use(express.json());
