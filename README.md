@@ -14,6 +14,7 @@ During my involvement with Circle Sync, I had the following responsibilities:
 - Developed and maintained a MongoDB database for efficient storage and management of user-generated content and application data.
 - Integrated Firebase Cloud Messaging to provide real-time notifications, enhancing user engagement and overall experience.
 - Collaborated closely with mobile app developers to ensure smooth cross-platform integration.
+- Implemented comprehensive testing via both unit tests and integration tests to validate individual modules as well as interoperability across connected components, enabling robust and maintainable code.
 
 ## Project Technologies & Tools
 The project utilized the following technologies and tools:
@@ -23,6 +24,7 @@ The project utilized the following technologies and tools:
 - Firebase Cloud Messaging
 - Git
 - Docker
+- Jest
 ## Project Technologies & Tools
 The project utilized the following technologies and tools:
 - Node.js
