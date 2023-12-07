@@ -1,13 +1,13 @@
 
-# CycleSync | Mobile Application
+# Circle Sync | Mobile Application
 
-CycleSync is a vibrant social media mobile application that facilitates user connections, content sharing, and meaningful interactions within dedicated interest-based spaces. It operates similarly to Facebook but with a focus on creating a space for users to connect around their interests.
+Circle Sync is a vibrant social media mobile application that facilitates user connections, content sharing, and meaningful interactions within dedicated interest-based spaces. It operates similarly to Facebook but with a focus on creating a space for users to connect around their interests.
 
 
 
 
 ## Responsibilities
-During my involvement with CycleSync, I had the following responsibilities:
+During my involvement with Circle Sync, I had the following responsibilities:
 - Designed and implemented RESTful APIs to enable seamless communication between the mobile application and the server.
 - Leveraged Node.js and Express.js to create a robust and scalable backend, ensuring optimal performance.
 - Implemented user authentication and authorization mechanisms to safeguard user data and privacy.
@@ -35,7 +35,7 @@ The project utilized the following technologies and tools:
 ## 
 
 
-- Feel free to explore the code, documentation, and the exciting features developed during the CycleSync project. If you have any questions or would like to collaborate, please don't hesitate to get in touch.
+- Feel free to explore the code, documentation, and the exciting features developed during the Circle Sync project. If you have any questions or would like to collaborate, please don't hesitate to get in touch.
 
 Enjoy your exploration! 
 
