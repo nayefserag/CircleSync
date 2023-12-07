@@ -20,15 +20,6 @@ During my involvement with Circle Sync, I had the following responsibilities:
 The project utilized the following technologies and tools:
 - Node.js
 - Express.js
-- MongoDB
-- Firebase Cloud Messaging
-- Git
-- Docker
-- Jest
-## Project Technologies & Tools
-The project utilized the following technologies and tools:
-- Node.js
-- Express.js
 - Jest
 - MongoDB
 - Firebase Cloud Messaging
