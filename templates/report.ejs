@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .header {
+            background-color: #3498db;
+            color: #ffffff;
+            padding: 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .header h1 {
+            font-size: 24px;
+            text-align: center; /* Center the header text */
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .code {
+            font-size: 28px;
+            background-color: #3498db;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+        }
+
+        .footer {
+            background-color: #f0f0f0;
+            padding: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        .footer p {
+            text-align: center; /* Center the footer text */
+        }
+
+        .image {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Your Report Is Ready To Download</h1>
+        </div>
+        <div class="content">
+            <img class="image" src="https://i.imgur.com/FbS3ShG.png" alt="OTP Image">
+            <p>Hello, <%= name %></p>
+            <p>Your Report</p>
+            <div class="code">
+                <a href= "<%= link %>"> Click Here To Download </a> 
+            </div>
+            <p> It's Your Link To Download Your Report.</p>
+        </div>
+        <div class="footer">
+            <p>© 2023 Circle Sync.</p>
+
+        </div>
+    </div>
+</body>
+
+</html>
