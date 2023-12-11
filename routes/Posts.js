@@ -39,8 +39,6 @@ router.use(TokenOperation.verifyToken);
  */
 //search Posts by hashtag
 router.get('/search/:hashtag',tokenmiddleware.verifyToken,logic.searchPosts);
-
-
 /**
  * @swagger
  * /post:
@@ -68,12 +66,8 @@ router.get('/search/:hashtag',tokenmiddleware.verifyToken,logic.searchPosts);
  *       400:
  *         $ref: '#/components/responses/BadRequest'  # Reference to a 400 Bad Request response definition if needed
  */ 
-
-
 // //create post
 router.post('/post',tokenmiddleware.verifyToken ,validatePost.validatePosts,logic.createPost);
-
-
 /**
  * @swagger
  * /{postId}:
@@ -110,11 +104,8 @@ router.post('/post',tokenmiddleware.verifyToken ,validatePost.validatePosts,logi
  *       404:
  *         $ref: '#/components/responses/NotFound'  # Reference to a 404 Not Found response definition if needed
  */
-
 // //update post
 router.put('/:postId',tokenmiddleware.verifyToken ,validatePost.validatePosts,validatePost.postIsExiected , logic.updatePost);
-
-
 /**
  * @swagger
  * /{postId}:
@@ -141,8 +132,6 @@ router.put('/:postId',tokenmiddleware.verifyToken ,validatePost.validatePosts,va
  */
 // //delete post
 router.delete('/:postId',tokenmiddleware.verifyToken,validatePost.postIsExiected , logic.deletePost);
-
-
 /**
  * @swagger
  * /:
@@ -166,9 +155,6 @@ router.delete('/:postId',tokenmiddleware.verifyToken,validatePost.postIsExiected
  */
 // //get all posts (timeline)
 router.get('/',tokenmiddleware.verifyToken , logic.getAllPosts);
-
-
-
 /**
  * @swagger
  * /{postId}:
@@ -199,8 +185,6 @@ router.get('/',tokenmiddleware.verifyToken , logic.getAllPosts);
  */
 // //get single post   
 router.get('/:postId',tokenmiddleware.verifyToken ,validatePost.postIsExiected ,logic.getPost);
-
-
 /**
  * @swagger
  * /{postId}/like:
@@ -227,9 +211,6 @@ router.get('/:postId',tokenmiddleware.verifyToken ,validatePost.postIsExiected ,
  */
 // //like post
 router.post('/:postId/like',tokenmiddleware.verifyToken , logic.likeAndUnlikePost);
-
-
-
 /**
  * @swagger
  * /{postId}/comment:
@@ -264,8 +245,6 @@ router.post('/:postId/like',tokenmiddleware.verifyToken , logic.likeAndUnlikePos
  */
 // //comment post
 router.post('/:postId/comment',tokenmiddleware.verifyToken ,validateComments.validateComment,logic.addComment);
-
-
 /**
  * @swagger
  * /{postId}/comments:
@@ -298,7 +277,6 @@ router.post('/:postId/comment',tokenmiddleware.verifyToken ,validateComments.val
  */
 // //get all comments
 router.get('/:postId/comments/',tokenmiddleware.verifyToken,validatePost.postIsExiected ,logic.getAllComments);
-
 /**
  * @swagger
  * /{postId}/{commentId}:
@@ -331,7 +309,6 @@ router.get('/:postId/comments/',tokenmiddleware.verifyToken,validatePost.postIsE
  */
 // //delete comment
 router.delete('/:postId/:commentId',tokenmiddleware.verifyToken,validatePost.postIsExiected ,logic.removeComment);
-
 /**
  * @swagger
  * /{postId}/{commentId}:
@@ -368,7 +345,6 @@ router.delete('/:postId/:commentId',tokenmiddleware.verifyToken,validatePost.pos
  */
 // //get comment
 router.get('/:postId/:commentId',tokenmiddleware.verifyToken,validatePost.postIsExiected ,logic.getComment);
-
 /**
  * @swagger
  * /{postId}/{commentId}:

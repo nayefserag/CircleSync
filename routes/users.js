@@ -240,5 +240,6 @@ router.get('/:id/followers', tokenmiddleware.verifyToken, logic.getfollowers)
 //get My Following list
 router.get('/:id/following', tokenmiddleware.verifyToken, logic.getfollowing)
 
-
+// get report
+// router.get('/reports', services.getReports)
 module.exports = router
